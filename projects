@@ -1,0 +1,73 @@
+-- MySQL dump 10.10
+--
+-- Host: 127.0.0.1    Database: projects
+-- ------------------------------------------------------
+-- Server version	5.0.22-community-nt
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `project_details`
+--
+
+DROP TABLE IF EXISTS `project_details`;
+CREATE TABLE `project_details` (
+  `id` int(11) NOT NULL,
+  `Title` varchar(300) NOT NULL,
+  `Description` varchar(300) NOT NULL,
+  `Image` varchar(300) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `project_details`
+--
+
+
+/*!40000 ALTER TABLE `project_details` DISABLE KEYS */;
+LOCK TABLES `project_details` WRITE;
+INSERT INTO `project_details` VALUES (1,'Wildlife Photography','Wildlife Photography Project aims to capture the raw beauty and majestic allure of the natural world through the lens of a camera. This project is dedicated to exploring and documenting the mesmerizing lives of various wildlife species.','projectPhotosp1.jpg'),(2,'Art Photography','Art photography is a form of creative expression that goes beyond capturing mere images. Unlike documentary or commercial photography, art photography often prioritizes aesthetics, composition, and the photographer\'s personal vision.','projectPhotos/a1.jfif');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `project_details` ENABLE KEYS */;
+
+--
+-- Table structure for table `regi_form_data`
+--
+
+DROP TABLE IF EXISTS `regi_form_data`;
+CREATE TABLE `regi_form_data` (
+  `id` varchar(300) NOT NULL,
+  `username` varchar(300) NOT NULL,
+  `password` varchar(300) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `regi_form_data`
+--
+
+
+/*!40000 ALTER TABLE `regi_form_data` DISABLE KEYS */;
+LOCK TABLES `regi_form_data` WRITE;
+INSERT INTO `regi_form_data` VALUES ('','','$2y$10$nDFZQEw61/OcVXaiTfE.KefkuXBn3swD/e5DhDugwGunLNvn6Fpzi'),('001','admin','$2y$10$ZHt9NXbK6lbgpc87.SP/Gu3JUcVHrulycEt5mX8en0KbAgdRJgoKO'),('009','asfg','$2y$10$u1zZbJmuRlF4mwFio/wnn.QW/wn/xBFKbtZvZT4me07a.21aTEqFW'),('12','abcd','$2y$10$DGZT58WGJI0YKgXkDyCkruV0uEP58VvNN4RrVvQb9jeTxYF1ECgWK'),('123','qwe','$2y$10$zvmMv6IFRR3T3ekNFWXcvOKPOGm9oFWwpvoVeSyoWIXxm5a4SGbKa'),('90','vip','$2y$10$nWr3p4S2SzG.lmyQip7suuX94gnfmh7CLKnLTMn9RSkCiuEsj9UIq');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `regi_form_data` ENABLE KEYS */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
